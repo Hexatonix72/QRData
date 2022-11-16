@@ -1,10 +1,8 @@
+import datetime
 import json
 
-import qrcode
-
-import datetime
-
 import pygame
+import qrcode
 
 
 class QRData:
