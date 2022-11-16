@@ -38,8 +38,8 @@ pygame.init()
 gameDisplay = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
 pygame.display.set_caption('QR Display')
 
-black = (0,0,0)
-white = (255,255,255)
+black = (0, 0, 0)
+white = (255, 255, 255)
 
 clock = pygame.time.Clock()
 crashed = False 
@@ -57,11 +57,10 @@ while not crashed:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
                 crashed = True
-                
-                
+
     a = datetime.datetime.now()
     
-    if  EndTimeInt < a:        
+    if EndTimeInt < a:
         generateQRcode()
         EndTimeInt = (a + TwentyInt)
     
@@ -71,7 +70,6 @@ while not crashed:
     gameDisplay.fill(white)
     gameDisplay.blit(qrImg, r)
 
-        
     pygame.display.update()
     clock.tick(60)
 
