@@ -33,7 +33,7 @@ def generateQRcode():
 pygame.init()
 
 
-gameDisplay = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
+gameDisplay = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 pygame.display.set_caption('QR Display')
 
 black = (0, 0, 0)
@@ -73,4 +73,3 @@ while not crashed:
 
 pygame.quit()
 quit()
-
